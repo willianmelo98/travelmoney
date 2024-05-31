@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 mx-auto">
+
+      <form [formGroup]="formCriaViagem" (ngSubmit)="salvarViagem()">
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Destino</label>
+            <input class="form-control" formControlName="lugar" type="text" placeholder="Ex. Ubatuba" required>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Orçamento</label>
+            <input class="form-control" formControlName="orcamento" type="number" placeholder="Ex: 1.000 reais" required>
+
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+      <!--
+            <section>
+              <h4>Categoria</h4>
+              <mat-button-toggle-group formControlName="categoria">
+                <mat-button-toggle value={{urlIconRestaurante}}>
+
+                  <img  src={{urlIconRestaurante}} width="40">
+                <div>Restaurante</div>
+                </mat-button-toggle>
+
+                <mat-button-toggle value={{urlIconPassagens}}>
+                  <img
+                    src={{urlIconPassagens}} width="40">
+                  <div>Transporte</div>
+                </mat-button-toggle>
+
+
+                <mat-button-toggle value={{urlIconMercado}}>
+                  <img
+                    src={{urlIconMercado}} width="40">
+                       <div>Mercado</div>
+                </mat-button-toggle>
+              </mat-button-toggle-group>
+            </section>
+
+          -->
+
+          </div>
+        </div>
+
+
+        <br>
+        <div *ngIf="mensagem" class="alert alert-success" role="alert"> {{mensagem}} </div>
+
+
+        <div class="form-group">
+          <button type="submit" [disabled]='!formCriaViagem .valid' class="btn btn-block btn-info btn-xl ">
+            <i class="fas fa-check-double"></i> {{labelButton}}
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

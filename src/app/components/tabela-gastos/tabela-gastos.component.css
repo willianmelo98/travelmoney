@@ -1,0 +1,28 @@
+.headerCardGasto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4px;
+  height: 56px;
+  border-bottom: 1px rgba(0,0,0,.12) solid;
+  font-weight: bolder;
+  color: rgba(0,0,0,.54);
+  padding-left: 16px;
+  padding-right: 14px;
+
+
+}
+
+
+
+.valoresDoHeaderCard{
+  padding-left: 4px;
+
+}
+
+.botao{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}

@@ -1,0 +1,68 @@
+.container {
+  padding-right: 5px !important;
+  padding-left: 10px !important;
+}
+
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard {
+  border: none !important;
+}
+
+.mat-button-toggle-standalone, .mat-button-toggle-group {
+position: relative;
+display: flex;
+flex-direction: row;
+/* white-space: nowrap; */
+flex-wrap: wrap;
+overflow: hidden;
+border-radius: 2px;
+-webkit-tap-highlight-color: transparent;
+}
+
+
+.mat-button-toggle {
+white-space: nowrap;
+border: solid 1px rgba(0,0,0,.12);
+position: relative;
+margin: 3px;
+width: 90px;
+font-size: 8pt;
+}
+
+.grupoCardCategoria{
+  display: flex;
+  FONT-WEIGHT: 100
+}
+
+
+
+.iconsCategoria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.textoIconCategoria{
+  margin-top: -10px;
+}
+
+
+.grupoCardPagamento{
+  height: 65px;
+}
+
+.iconsPagamento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.textoIconPagamento{
+  margin-top: -15px;
+}

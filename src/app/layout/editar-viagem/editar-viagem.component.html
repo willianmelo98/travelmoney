@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 mx-auto">
+
+      <form [formGroup]="formAtualizarViagem" (ngSubmit)="salvarViagem()">
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Destino</label>
+            <input class="form-control" formControlName="lugar" type="text" placeholder="Ex. Ubatuba" required>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Orçamento</label>
+            <input class="form-control" formControlName="orcamento" type="number" placeholder="Ex: 1.000 reais" required>
+
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+
+          </div>
+        </div>
+
+
+        <br>
+        <div *ngIf="mensagem" class="alert alert-success" role="alert"> {{mensagem}} </div>
+
+
+        <div class="form-group">
+          <button type="submit" [disabled]='!formAtualizarViagem .valid' class="btn btn-block btn-info btn-xl ">
+            <i class="fas fa-check-double"></i> {{labelButton}}
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

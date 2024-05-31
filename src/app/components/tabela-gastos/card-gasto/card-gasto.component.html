@@ -1,0 +1,31 @@
+
+
+
+
+
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+
+
+    <mat-expansion-panel-header>
+      <div class="ContainerCard">
+        <div class="itemContainer">
+          <img class="itemGastoICon" src="{{imgItemGasto}}">
+          <div class="dadosDoItem">
+            <div><strong>{{itemTitulo}}</strong></div>
+            <div><strong></strong></div>
+            <div>{{data.toDate() |date:'dd MMM, yyyy HH:mm' }}
+            </div>
+          </div>
+        </div>
+
+        <div class="itemEvalor">{{valorGasto | currency:"BRL"}}</div>
+      </div>
+    </mat-expansion-panel-header>
+    <button mat-stroked-button style="color:#6AA4DB" (click)='editarGasto(gasto)'>Editar</button>
+    <button mat-stroked-button color="warn" (click)='deletarGasto(gasto)'>Excluir</button>
+    <div *ngIf="messages" class="alert alert-success" role="alert"> {{messages}} </div>
+
+
+  </mat-expansion-panel>
+</mat-accordion>

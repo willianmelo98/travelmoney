@@ -1,0 +1,17 @@
+<div class="headerCardGasto">
+  <div><span class=""><img width="30px" src="/assets/card.png"></span> <span class="valoresDoHeaderCard">Gasto: {{getTotalCost() | currency:"BRL"}}</span></div>
+  <div>
+    <span class="" *ngFor="let item of viagem | async"><img width="24px" src="/assets/orçamento.png"> Orçado: {{getOrcamento() | currency:"BRL"}}</span>
+  </div>
+
+
+</div>
+
+<app-card-gasto *ngFor="let item of gasto | async" [gasto]='item'>
+
+
+</app-card-gasto>
+
+<a *ngFor="let item of viagem | async"  [routerLink]="['/main/addGasto',item.idviagem,item.lugar]" mat-fab color="primary" aria-label="Example icon button with a home icon" class='botao'>
+  <mat-icon>add</mat-icon>
+</a>

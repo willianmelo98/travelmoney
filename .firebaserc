@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "travel-money-app": {
+      "hosting": {
+        "travelmoney": [
+          "travel-money-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "travel-money-app"
+  }
+}

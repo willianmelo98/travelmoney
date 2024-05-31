@@ -1,0 +1,29 @@
+
+.alignLugares{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.alignIcons{
+  display: flex;
+}
+
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

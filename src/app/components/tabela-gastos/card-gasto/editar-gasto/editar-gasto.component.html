@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 mx-auto">
+
+      <form [formGroup]="formGasto" (ngSubmit)="salvarGasto()">
+        <div class="control-group">
+          <div class="form-group floating-div-form-group controls mb-0 pb-2">
+            <div>Adiconar titulo do gasto</div>
+            <input class="form-control" formControlName="item" type="text" placeholder="Ex. Pizza" required>
+
+          </div>
+        </div>
+
+
+        <div class="control-group">
+          <div class="form-group floating-div-form-group controls mb-0 pb-2">
+
+
+            <section>
+              <div>Categoria</div>
+              <mat-button-toggle-group formControlName="categoria" class="grupoCardCategoria">
+
+                <mat-button-toggle value={{urlIconRestaurante}}>
+                  <div class="iconsCategoria"><img src={{urlIconRestaurante}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Restaurante</div>
+                </mat-button-toggle>
+
+                <mat-button-toggle value={{urlIconPassagens}}>
+                  <div class="iconsCategoria"><img src={{urlIconPassagens}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Transporte</div>
+                </mat-button-toggle>
+
+
+                <mat-button-toggle value={{urlIconMercado}}>
+                  <div class="iconsCategoria"> <img src={{urlIconMercado}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Mercado</div>
+                </mat-button-toggle>
+
+               <mat-divider></mat-divider>
+
+                <mat-button-toggle   value={{urlIconNote}}>
+                  <div class="iconsCategoria"><img src={{urlIconNote}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Outros</div>
+                </mat-button-toggle>
+
+                <mat-button-toggle  value={{urlIconEstadia}}>
+                  <div class="iconsCategoria"><img src={{urlIconEstadia}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Estadia</div>
+                </mat-button-toggle>
+
+
+                <mat-button-toggle value={{urlIconCafe}}>
+                  <div class="iconsCategoria"> <img src={{urlIconCafe}} width="40" style="margin-top: 5px;"></div>
+                  <div class="textoIconCategoria">Cafe</div>
+                </mat-button-toggle>
+
+
+
+              </mat-button-toggle-group>
+            </section>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="control-group">
+          <div class="form-group floating-div-form-group controls mb-0 pb-2">
+            <div>Preco</div>
+            <input class="form-control" formControlName="preco" type="number" placeholder="Preco" required>
+
+          </div>
+        </div>
+
+
+        <div class="control-group">
+          <div class="form-group floating-div-form-group controls mb-0 pb-2">
+            <div>Metodo de pagamento</div>
+
+            <mat-button-toggle-group formControlName="tipoPagamento" class='grupoCardPagamento'>
+
+              <mat-button-toggle style=" width:114px" value={{urlIconCartaopay}}>
+
+                <div class="iconsPagamento"><img src={{urlIconCartaopay}} width="40">
+                  <div class="textoIconPagamento">Debito/Credito</div>
+                </div>
+              </mat-button-toggle>
+
+              <mat-button-toggle style=" width:114px" value={{urlIconMoney}}>
+                <div class="iconsPagamento"><img src={{urlIconMoney}} width="40">
+                  <div class="textoIconPagamento">Dinheiro</div>
+
+                </div>
+              </mat-button-toggle>
+
+
+            </mat-button-toggle-group>
+
+          </div>
+
+
+        </div>
+
+        <br>
+        <div *ngIf="mensagem" class="alert alert-success" role="alert"> {{mensagem}} </div>
+
+
+        <div class="form-group">
+          <button type="submit" [disabled]='!formGasto.valid' class="btn btn-block btn-info btn-xl ">
+            <i class="fas fa-check-double"></i> {{labelButton}}
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
