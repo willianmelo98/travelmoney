@@ -14,13 +14,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
-
-
-
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-
-
 
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
@@ -43,12 +38,6 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-
-
-
-
-
-
 
 
 @NgModule({
@@ -86,10 +75,10 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     MatExpansionModule,
     FormsModule,
     MatButtonToggleModule,
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideStorage(() => getStorage()),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AngularFireStorageModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],

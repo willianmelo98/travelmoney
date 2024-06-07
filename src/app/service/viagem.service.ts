@@ -28,13 +28,8 @@ export class ViagemService {
 
 
     getViagem(viagem): Observable<Viagem[]>{
-
-
       return this.storage.collection<Viagem>("viagem", ref =>
-
       ref.where("idviagem", "==",viagem)).valueChanges();
-
-
    }
 
 
