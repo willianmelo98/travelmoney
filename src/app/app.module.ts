@@ -22,10 +22,10 @@ import { LayoutComponent } from './layout/layout.component';
 
 
 
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from '../environments/environment';
 import { AddGastoComponent } from './components/addGastos/add-gasto/add-gasto.component';
 import { AddViagemComponent } from './components/add-viagem/add-viagem.component';
