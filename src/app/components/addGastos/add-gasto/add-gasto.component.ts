@@ -39,7 +39,7 @@ export class AddGastoComponent implements OnInit {
     this.formGasto = this.form.group({
       item: ['', Validators.required],
       preco: [null, Validators.required],
-      tipoPagamento: ['', Validators.required],
+      tipoPagamento: [this.urlIconCartaopay, Validators.required],
       categoria: ['', Validators.required],
     });
   }
@@ -78,6 +78,7 @@ export class AddGastoComponent implements OnInit {
     this.gasto.uid = this.usuario.uid;
     this.gastoService.salvar(this.gasto)
       .then(() => {
+
         this.mensagem = `Seu gasto foi adicionado.`;
 
       })

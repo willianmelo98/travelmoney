@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Viagem } from 'src/app/model/viagem';
 import { ViagemService } from 'src/app/service/viagem.service';
 import { EditarViagemComponent } from '../editar-viagem/editar-viagem.component';
+import { SetIcons } from 'src/assets/icons/setIcons';
 
 @Component({
   selector: 'app-boas-vindas',
@@ -13,6 +14,8 @@ import { EditarViagemComponent } from '../editar-viagem/editar-viagem.component'
 export class BoasVindasComponent implements OnInit {
   viagem: Observable<Viagem[]>
   messages: string;
+
+  icons = SetIcons;
 
   constructor(public dialog: MatDialog,public serviceViagem: ViagemService) { }
 
