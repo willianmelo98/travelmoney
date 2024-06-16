@@ -45,12 +45,11 @@ export class ViagemService {
   }
 
 
-  salvar(viagem: Viagem): Promise<void> {
+  async salvar(viagem: Viagem): Promise<void> {
     viagem.data = new Date();
-    return this.projectCol.add(Object.assign({}, viagem)).then(objeto => {
-      viagem.idviagem = objeto.id
-      this.update(viagem)
-    })
+    const objeto = await this.projectCol.add(Object.assign({}, viagem));
+    viagem.idviagem = objeto.id;
+    this.update(viagem);
   }
 
 
