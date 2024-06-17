@@ -588,8 +588,13 @@ body .table thead th {
 
   .authBlock{
     background-color: rgba(10, 10, 10, 0.5);
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none
   }
-
 
 
   .orInner{
@@ -737,13 +742,20 @@ body .table thead th {
     background: white
   }
 
-  .authBlock {
-    box-shadow: none
-  }
-
   .px-logo {
     display: none;
   }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn-info {
+  color: #fff;
+  background-color: #673ab7;
+  border-color: #673ab7;
+}
+
+.btn-info:disabled{
+  background-color: #673ab7;
+  border-color: #673ab7;
+}
