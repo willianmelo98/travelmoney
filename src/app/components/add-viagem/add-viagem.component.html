@@ -1,31 +1,36 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4 mx-auto">
-
       <form [formGroup]="formCriaViagem" (ngSubmit)="salvarViagem()">
         <div class="control-group">
           <div class="form-group floating-label-form-group controls mb-0 pb-2">
             <label>Destino</label>
-            <input class="form-control" formControlName="lugar" type="text" placeholder="Ex. Ubatuba" required>
-
+            <input
+              class="form-control"
+              formControlName="lugar"
+              type="text"
+              placeholder="Ex. Ubatuba"
+              required
+            />
           </div>
         </div>
-
-
-
 
         <div class="control-group">
           <div class="form-group floating-label-form-group controls mb-0 pb-2">
             <label>Orçamento</label>
-            <input class="form-control" formControlName="orcamento" type="number" placeholder="Ex: 1.000 reais" required>
-
+            <input
+              class="form-control"
+              formControlName="orcamento"
+              type="number"
+              placeholder="Ex: 1.000 reais"
+              required
+            />
           </div>
         </div>
 
         <div class="control-group">
           <div class="form-group floating-label-form-group controls mb-0 pb-2">
-
-      <!--
+            <!--
             <section>
               <h4>Categoria</h4>
               <mat-button-toggle-group formControlName="categoria">
@@ -50,23 +55,27 @@
               </mat-button-toggle-group>
             </section>
 
-          -->
-
-          </div>
+          --></div>
         </div>
 
+        <br />
+        <div *ngIf="mensagem" class="alert alert-success" role="alert">
+          {{ mensagem }}
+        </div>
 
-        <br>
-        <div *ngIf="mensagem" class="alert alert-success" role="alert"> {{mensagem}} </div>
-
+        <mat-spinner class="spinner" *ngIf="teveSucesso"></mat-spinner>
 
         <div class="form-group">
-          <button type="submit" [disabled]='!formCriaViagem .valid' class="btn btn-block btn-info btn-xl ">
-            <i class="fas fa-check-double"></i> {{labelButton}}
+          <button
+            *ngIf="!teveSucesso"
+            type="submit"
+            [disabled]="!formCriaViagem.valid"
+            class="btn btn-block btn-info btn-xl"
+          >
+            <i class="fas fa-check-double"></i> {{ labelButton }}
           </button>
         </div>
       </form>
     </div>
-
   </div>
 </div>

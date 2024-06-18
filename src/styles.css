@@ -1,20 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 /* You can add global styles to this file, and also import other style files */
 
-@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
 
 .feather {
   width: 16px;
@@ -65,7 +68,7 @@ h6 {
   display: table;
   width: 100%;
   height: 100%;
-  background: #3F51B5;
+  background: #3f51b5;
 }
 
 .displayTableCell {
@@ -73,7 +76,7 @@ h6 {
   vertical-align: middle;
   width: 100%;
 
-  background-image: url('\assets\fotoPraia.jpg');
+  background-image: url("\assets\fotoPraia.jpg");
   background-size: cover;
 
   height: 100%;
@@ -92,8 +95,8 @@ h3 {
 
   padding: 30px 40px 10px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .04);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .04);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.04);
 }
 
 label {
@@ -121,23 +124,23 @@ label {
 }
 
 .formControl:focus {
-  border: 2px solid #d3d3d6
+  border: 2px solid #d3d3d6;
 }
 
 input::-webkit-input-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 input::-moz-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 input:-ms-input-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 input:-moz-placeholder {
-  color: #BBBBBB
+  color: #bbbbbb;
 }
 
 .displayTable .btn {
@@ -146,18 +149,18 @@ input:-moz-placeholder {
   font-size: 16px;
   font-weight: 600;
   padding: 15px 0;
-  background: #15CD72;
+  background: #15cd72;
   color: #ffffff;
   cursor: pointer;
   outline: none;
 }
 
 .displayTable .btn:hover {
-  opacity: .88;
+  opacity: 0.88;
 }
 
 .displayTable .btnSecondary {
-  background: #EEEEEE;
+  background: #eeeeee;
   color: #404040;
 }
 
@@ -175,7 +178,6 @@ input:-moz-placeholder {
   color: #c9c7c7;
   position: relative;
   margin: 5px 0 0px;
-
 }
 
 .orInner {
@@ -183,23 +185,21 @@ input:-moz-placeholder {
   z-index: 4;
   position: relative;
   padding: 0 12px;
-
 }
 
 .or:before {
   position: absolute;
-  content: '';
+  content: "";
   left: 62%;
   top: 11px;
   width: 37%;
   height: 1px;
   background: #e2e2e2;
 }
-.or:after{
-
+.or:after {
   position: absolute;
-  content: '';
-  right:62%;
+  content: "";
+  right: 62%;
   top: 11px;
   width: 37%;
   height: 1px;
@@ -226,7 +226,7 @@ input:-moz-placeholder {
 }
 
 .forgotPassword span {
-  color: #3C89EF;
+  color: #3c89ef;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
@@ -249,14 +249,14 @@ input:-moz-placeholder {
 
 /* * Sidebar */
 .sidebar {
-  position:relative;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   /* Behind the navbar */
   padding: 48px 0 0;
   /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
   height: 905px;
 }
 
@@ -264,12 +264,12 @@ input:-moz-placeholder {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-@supports ((position:-webkit-sticky) or (position:sticky)) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -287,7 +287,7 @@ input:-moz-placeholder {
 }
 
 .sidebar-heading {
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -301,7 +301,7 @@ input:-moz-placeholder {
 .sidebar a:hover,
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
-  color: #E91E63;
+  color: #e91e63;
   background: #efefef;
 }
 
@@ -311,8 +311,8 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .dasboard-text {
-  border-left: 1px solid rgb(255, 255, 255, .3);
-  color: rgb(255, 255, 255, .5);
+  border-left: 1px solid rgb(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255, 0.5);
   display: inline-block;
   padding: 0 0 0 14px;
   font-size: 15px;
@@ -323,38 +323,32 @@ a:not([href]):not([tabindex]):hover {
 
 /* * Navbar */
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-
-
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
-
 
 #form-input {
   height: 50px;
   padding: 10px;
 }
 
-
 .navbar .form-control {
-  padding: .75rem 1rem;
-
-
+  padding: 0.75rem 1rem;
 }
 
 .form-control-dark {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-control-dark:focus {
   border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
 .form-control:focus {
-  border-color: #00BCD4;
+  border-color: #00bcd4;
   box-shadow: none;
 }
 
@@ -363,7 +357,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .bg-dark {
-  background-color: #3F51B5 !important;
+  background-color: #3f51b5 !important;
 }
 
 .gap-right {
@@ -389,7 +383,7 @@ i {
 }
 
 .action-block .fa-trash-alt:hover {
-  color: #E91E63;
+  color: #e91e63;
 }
 
 .btn-primary.focus,
@@ -411,7 +405,7 @@ body .ngx-pagination li:last-child {
 }
 
 body .ngx-pagination .current {
-  background: #055AF9;
+  background: #055af9;
 }
 
 .ngx-pagination a:hover,
@@ -462,7 +456,7 @@ label {
 }
 
 .form-control {
-  padding: 1.375rem .75rem;
+  padding: 1.375rem 0.75rem;
 }
 
 /* Misc */
@@ -471,14 +465,12 @@ label {
   margin: 20px auto 0;
 }
 
-
-
 .nodata-msg {
   margin: 25px 0 15px;
   font-size: 28px;
   color: #a9a6c5;
   font-weight: 300;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 [role="main"] {
@@ -496,7 +488,7 @@ label {
 .custom-text {
   font-size: 15px;
   color: #5f5f5f;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .navbar-dark .navbar-brand {
@@ -542,16 +534,16 @@ body .table thead th {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 1)
+  color: rgba(255, 255, 255, 1);
 }
 
 .card {
-  border: none
+  border: none;
 }
 
 .list-group-item {
   padding: 0 1.25rem 15px;
-  border: none
+  border: none;
 }
 
 .fa-sign-out-alt {
@@ -574,33 +566,28 @@ body .table thead th {
 }
 
 /* Responsive */
-@media(max-width:767px) {
-
-  h3{
+@media (max-width: 767px) {
+  h3 {
     color: white;
   }
 
-
-  .forgotPassword span{
+  .forgotPassword span {
     color: white;
   }
 
-
-  .authBlock{
+  .authBlock {
     background-color: rgba(10, 10, 10, 0.5);
     height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: none
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
   }
 
-
-  .orInner{
+  .orInner {
     color: white;
   }
-
 
   .redirectToLogin {
     padding: 15px 0 0;
@@ -609,15 +596,12 @@ body .table thead th {
     font-weight: 400;
     display: block;
     background-color: rgba(10, 10, 10, 0.5);
-    color:rgb(48, 47, 47);
+    color: rgb(48, 47, 47);
   }
 
-
-  .displayTableCell{
+  .displayTableCell {
     background-color: rgba(10, 10, 10, 0.5);
   }
-
-
 
   .redirectToLogin .redirect {
     cursor: pointer;
@@ -625,17 +609,13 @@ body .table thead th {
     text-decoration: underline;
   }
 
-
   .redirectToLogin span {
     color: rgb(255, 250, 250);
-
   }
-
 
   .redirectToLogin span.redirect {
     color: white;
   }
-
 
   .sidebar {
     position: static;
@@ -739,15 +719,21 @@ body .table thead th {
   }
 
   .displayTable {
-    background: white
+    background: white;
   }
 
   .px-logo {
     display: none;
   }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .btn-info {
   color: #fff;
@@ -755,7 +741,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-color: #673ab7;
 }
 
-.btn-info:disabled{
+.btn-info:disabled {
   background-color: #673ab7;
   border-color: #673ab7;
 }

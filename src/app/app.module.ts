@@ -38,6 +38,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,7 @@ import {MatButtonModule} from '@angular/material/button';
     AngularFirestoreModule,
     AngularFireStorageModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
